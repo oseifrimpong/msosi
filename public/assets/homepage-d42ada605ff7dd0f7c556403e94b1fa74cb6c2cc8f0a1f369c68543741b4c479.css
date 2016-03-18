@@ -1,0 +1,13 @@
+/* line 6, /Users/oseifrimpong/Dropbox/Development/Sites/msosi/app/assets/stylesheets/homepage.scss */
+body {
+  background: white;
+}
+
+/* line 10, /Users/oseifrimpong/Dropbox/Development/Sites/msosi/app/assets/stylesheets/homepage.scss */
+footer {
+  background-color: #55c1ef;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  height: 30%;
+}
