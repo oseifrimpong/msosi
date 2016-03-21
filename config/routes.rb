@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 #main homepage route
 root 'homepage#index'
 
-
+	#routes for users
+	resources :users, :only => [:show]
 end
