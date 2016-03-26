@@ -8,7 +8,7 @@ root 'homepage#index'
 
 
   devise_for :users, controllers: {
-        sessions: 'users/sessions'
+        sessions: 'user/sessions'
       }
 
 
