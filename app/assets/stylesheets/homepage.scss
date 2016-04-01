@@ -10,6 +10,69 @@ body{
 
 }
 
+
+
+// --------- Footer and it's content -------- //
+
+footer ._links{
+
+	//width: 30px;
+	//border: solid black;
+	height: 95px;
+	position: absolute;
+	right: 35%;
+	left: 35%;
+	margin-top: 10px;
+	
+}
+
+
+
+footer .top_links{
+	//border: solid black;
+	height:30%;
+}
+
+footer .top_links ul {
+	float: left;
+	font-size: 10px;
+	list-style-type: none;
+	padding-left:60px;
+	margin: 8px;
+	text-align: center;
+	//margin-bottom: 
+	
+}
+
+footer .top_links ul li {
+	display: inline;
+	color: white;
+	list-style: none;
+	font-weight:80;
+	padding-left:10px;
+	//text-align: justify;
+
+}
+
+footer hr{
+	//font-weight:10px;
+	width: 220px;
+	font-weight:80;
+}
+
+footer .bottom_links {
+
+	//border:solid black;
+	margin-top: 2px;
+}
+
+footer .bottom_links p{
+	text-align:center;
+	color: white;
+	font-size: 10px;
+	
+}
+
 footer{
 	background-color:#55c1ef;
 	width:100%;
