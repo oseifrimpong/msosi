@@ -1,82 +1,79 @@
 // Place all the styles related to the homepage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+@import "main.css";
 
 body{
 	background: white;
-	padding:0;
-	margin:0;
-
 }
 
 
 
 // --------- Footer and it's content -------- //
+//
+//footer ._links{
+//
+//	//width: 30px;
+//	//border: solid black;
+//	height: 95px;
+//	position: absolute;
+//	right: 35%;
+//	left: 35%;
+//	margin-top: 10px;
+//
+//}
+//
+//
+//
+//footer .top_links{
+//	//border: solid black;
+//	height:30%;
+//}
+//
+//footer .top_links ul {
+//	float: left;
+//	font-size: 10px;
+//	list-style-type: none;
+//	padding-left:60px;
+//	margin: 8px;
+//	text-align: center;
+//	//margin-bottom:
+//
+//}
 
-footer ._links{
-
-	//width: 30px;
-	//border: solid black;
-	height: 95px;
-	position: absolute;
-	right: 35%;
-	left: 35%;
-	margin-top: 10px;
-	
+footer{
+  font-size: small;
+  background-color:#55c1ef;
+  width:100%;
+  bottom:0;
+  position:fixed;
+  height: 150px;
+  text-align: center;
 }
-
-
 
 footer .top_links{
-	//border: solid black;
-	height:30%;
+  padding-top: 10px;
 }
-
-footer .top_links ul {
-	float: left;
-	font-size: 10px;
-	list-style-type: none;
-	padding-left:60px;
-	margin: 8px;
-	text-align: center;
-	//margin-bottom: 
-	
+footer .top_links ul{
+  padding: 0;
 }
-
 footer .top_links ul li {
-	display: inline;
-	color: white;
-	list-style: none;
-	font-weight:100;
-	padding-left:10px;
-	//text-align: justify;
+  display: inline;
+  color: white;
+  list-style: none;
+  font-weight: 600;
+  padding-left:10px;
 
-}
-
-footer hr{
-	//font-weight:10px;
-	width: 220px;
-	font-weight:100;
 }
 
 footer .bottom_links {
-
-	//border:solid black;
-	margin-top: 2px;
+  padding-top: 15px;
 }
 
 footer .bottom_links p{
-	text-align:center;
-	color: white;
-	font-size: 10px;
-	
+  text-align:center;
+  color: white;
+  font-weight: 100;
+
 }
 
-footer{
-	background-color:#55c1ef;
-	width:100%;
-	bottom:0;
-	position:fixed;
-	height: 15%;
-}
