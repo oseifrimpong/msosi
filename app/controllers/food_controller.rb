@@ -1,7 +1,11 @@
 class FoodController < ApplicationController
 
 	def index
-		@food = Food.find(:id)
+		@food = Food.all
+	end
+
+	def new
+		@food = Food.new(food_params)
 	end
 
 	def show
@@ -13,6 +17,7 @@ class FoodController < ApplicationController
 	end
 
 	def update
+		
 	end
 
 	def destroy
@@ -23,7 +28,7 @@ class FoodController < ApplicationController
 	private:
 
 		def food_params
-			
+			permit.require(:food)
 		end
 end
 
