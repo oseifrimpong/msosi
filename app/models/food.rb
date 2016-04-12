@@ -1,4 +1,6 @@
 class Food < ActiveRecord::Base
 
-	validates :name, :price
+	#validates :name
+	
+	belongs_to :restaurant
 end

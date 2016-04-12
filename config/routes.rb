@@ -13,7 +13,12 @@ root 'homepage#index'
 
 
 
+<<<<<<< HEAD
 	#routes for users
 	#resources :users, :only => [:show]
+=======
+ resource :foods
+
+>>>>>>> food
 
 end
