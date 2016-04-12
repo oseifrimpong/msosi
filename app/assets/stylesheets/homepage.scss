@@ -51,6 +51,21 @@ footer{
   text-align: center;
 }
 
+footer ._links{
+  width: 75%;
+  margin: 10px auto 0;
+}
+
+footer ._social a, footer ._stores a{
+  padding: 0 5px;
+}
+footer ._social{
+  float: left;
+}
+footer ._stores{
+  float: right;
+}
+
 footer .top_links{
   padding-top: 10px;
 }
