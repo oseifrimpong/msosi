@@ -1,0 +1,21 @@
+<h1>Add new food</h1>
+
+<%= form_tag :action => 'create' do %>
+
+<p><label for = "name">Name</label>
+<%= text_field 'foods', 'name' %></p>
+
+<p><label for = "Price">Price</label>
+<%= text_field 'foods', 'Price' %></p>
+
+<p><label for="description">Description</label>
+<%= text_area 'books', 'description' %></p>
+
+
+<%= submit_tag "Create" %>
+
+
+<!-- <--
+<p><label for=""></label></p> -->
+
+<% end %>

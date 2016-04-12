@@ -5,7 +5,7 @@ class FoodController < ApplicationController
 	end
 
 	def new
-		@food = Food.new(food_params)
+		@food = Food.new
 	end
 
 	def show
@@ -45,7 +45,7 @@ class FoodController < ApplicationController
 	private
 
 		def food_params
-			params.require(:food).permit(:name, :description, :image, :price, :active, :cuisine)
+			params.permit(:name, :description, :image, :price, :active, :cuisine)
 		end
 end
 
