@@ -7,7 +7,48 @@ body{
 	background: white;
 }
 
+// --------- Navbar and it's content -------- //
+nav{
+  height: 30px;
+  width: 75%;
+  position: relative;
+  margin: 20px auto;
+}
+nav ._logo, nav ._profile_tray{
+  overflow: hidden;
+  background: #000;
+  width: 130px;
+  display: inline-block;
+}
 
+nav ._logo{
+  padding: 5px 0 0 0;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+nav ._logo a{
+  padding-left: 25px;
+}
+
+nav ._profile_tray{
+  float: right;
+  padding: 5px 0 0 0;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+nav ._profile_tray a{
+  float: left;
+  padding: 0 5px;
+  text-decoration: none;
+  color: #ffffff;;
+}
+nav ._profile a{
+  border-right: 1px solid rgba(255,255,255,.5);
+}
+nav ._tray img{
+  width: 40px;
+}
 
 // --------- Footer and it's content -------- //
 //
@@ -68,6 +109,7 @@ footer ._stores{
 
 footer .top_links{
   padding-top: 10px;
+  border-bottom: 1px solid rgba(255,255,255,.2);
 }
 footer .top_links ul{
   padding: 0;
