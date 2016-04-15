@@ -51,17 +51,39 @@ nav ._tray img{
 }
 
 // --------- HomePage Content ----------------//
-
-._background{
+._background video{
   width: 100%;
   height: auto;
   z-index: -3;
-  display: inline-block;
+  position: fixed;
+  top: -100px;
+  left: 0;
+  overflow: hidden;
+}
+
+._bg_overlay{
   position: fixed;
   top: 0;
   left: 0;
-  background-size: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: -2;
+  opacity: .5;
 }
+
+
+//._background{
+//  width: 100%;
+//  height: auto;
+//  z-index: -3;
+//  display: inline-block;
+//  position: fixed;
+//  top: 0;
+//  left: 0;
+//  background-size: 10px;
+//}
+
 ._home_content{
   width: 50%;
   margin: 100px auto 0 auto;
@@ -81,7 +103,7 @@ nav ._tray img{
   margin: 0;
   width: 75%;
   border-radius: 7px;
-  border: solid 1px rgba(0,0,0,.5);
+  border: solid 1px rgba(0,0,0,0);
   padding: 5px 0;
   text-align: center;
   font-weight: 100;
