@@ -17,7 +17,7 @@ class FoodController < ApplicationController
 		if @food.save
 			redirect_to :action => 'index'
 		else
-			render :action => 'new'
+			#render :action => 'new'
 		end
 	end
 
@@ -43,9 +43,8 @@ class FoodController < ApplicationController
 
 
 	private
-
 		def food_params
-			params.permit(:name, :description, :image, :price, :active, :cuisine)
+			params.require(:food).permit(:name, :description, :image, :price, :active, :cuisine)
 		end
 end
 

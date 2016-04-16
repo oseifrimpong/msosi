@@ -1,10 +1,19 @@
 Rails.application.routes.draw do
 
-  #devise_for :users
+
 #main homepage route
 root 'homepage#index'
+	
 
- #resources :foods
+
+
+  devise_for :users, controllers: {
+        sessions: 'user/sessions'
+      }
+
+
+
+
  
 
  #--------Routes for food-----------#
@@ -17,6 +26,7 @@ root 'homepage#index'
  get 'foods/delete'		=> 'food#destroy'
  get 'foods/create'		=> 'food#create'
 		
+
 
 
 

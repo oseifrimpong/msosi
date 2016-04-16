@@ -8,16 +8,47 @@
 </head>
 <body>
 <nav>
-	<ul>
-		<li><a href="" title=""></a></li>
-	</ul>
+	<div class="_logo">
+    <a href="#"><%= image_tag('Msosi-Full.svg', height: 20) %></a>
+  </div>
+  <div class="_profile_tray">
+    <div class="_profile">
+      <a href="#"><%= image_tag('Profile-Icon.svg', height: 20) %></a>
+    </div>
+    <div class="_tray">
+      <a href="#"><%= image_tag('Tray-Icon.svg') %> Tray</a>
+    </div>
+  </div>
 </nav>
 <section>
 	<%= yield %>
 </section>
 	
 	<footer>
-		
+
+		<div class="_links">
+      <div class="_social">
+        <a href="#" ><%= image_tag('Twitter.svg', height: 20) %></a>
+        <a href="#" ><%= image_tag('Facebook.svg', height: 20) %></a>
+        <a href="#" ><%= image_tag('Linked In.svg', height: 20) %></a>
+      </div>
+      <div class="_stores">
+        <a href="#" ><%= image_tag('AppStore.svg', height: 20) %></a>
+        <a href="#" ><%= image_tag('GooglePlay.svg', height: 20) %></a>
+      </div>
+			<div class="top_links">
+				<ul>
+					<li>CAREERS</li>
+					<li>HELP</li>
+					<li>DEVELOPER</li>
+					<li>ABOUT US</li>
+				</ul>
+			</div>
+
+			<div class="bottom_links">
+				<p> TERMS AND CONDITIONS </p>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>
