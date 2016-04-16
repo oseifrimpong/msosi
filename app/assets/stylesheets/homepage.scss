@@ -7,39 +7,114 @@ body{
 	background: white;
 }
 
+// --------- Navbar and it's content -------- //
+nav{
+  height: 30px;
+  width: 75%;
+  position: relative;
+  margin: 20px auto;
+}
+nav ._logo, nav ._profile_tray{
+  overflow: hidden;
+  background: #000;
+  width: 130px;
+  display: inline-block;
+}
+
+nav ._logo{
+  padding: 5px 0 0 0;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+nav ._logo a{
+  padding-left: 25px;
+}
+
+nav ._profile_tray{
+  float: right;
+  padding: 5px 0 0 0;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+nav ._profile_tray a{
+  float: left;
+  padding: 0 5px;
+  text-decoration: none;
+  color: #ffffff;;
+}
+nav ._profile a{
+  border-right: 1px solid rgba(255,255,255,.5);
+}
+nav ._tray img{
+  width: 40px;
+}
+
+// --------- HomePage Content ----------------//
+
+._background{
+  width: 100%;
+  height: auto;
+  z-index: -3;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-size: 10px;
+}
+._home_content{
+  width: 50%;
+  margin: 100px auto 0 auto;
+}
+._home_content ._logo{
+  width: 75px;
+  margin: 0 auto 50px;
+}
+
+._home_content ._search{
+  overflow: hidden;
+  width: 100%;
+  background: #55c1ef;
+  border-radius: 7px;
+}
+._home_content ._search input{
+  margin: 0;
+  width: 75%;
+  border-radius: 7px;
+  border: solid 1px rgba(0,0,0,.5);
+  padding: 5px 0;
+  text-align: center;
+  font-weight: 100;
+}
+._home_content ._search input:focus, ._home_content ._search select:focus{
+  outline: none;
+}
+
+._home_content ._search label img{
+  padding: 5px 5px 0 5px;
+}
+
+._home_content ._search select {
+  color: #ffffff;
+  background: transparent;
+  padding: 5px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+._home_content .styled-select{
+  display: inline-block;
+  height: inherit;
+  width: 17%;
+  background: image-url('menu-down-btn.svg') no-repeat right center;
+  background-size: 10px;
+}
 
 
 // --------- Footer and it's content -------- //
-//
-//footer ._links{
-//
-//	//width: 30px;
-//	//border: solid black;
-//	height: 95px;
-//	position: absolute;
-//	right: 35%;
-//	left: 35%;
-//	margin-top: 10px;
-//
-//}
-//
-//
-//
-//footer .top_links{
-//	//border: solid black;
-//	height:30%;
-//}
-//
-//footer .top_links ul {
-//	float: left;
-//	font-size: 10px;
-//	list-style-type: none;
-//	padding-left:60px;
-//	margin: 8px;
-//	text-align: center;
-//	//margin-bottom:
-//
-//}
+
 
 footer{
   font-size: small;
@@ -51,8 +126,24 @@ footer{
   text-align: center;
 }
 
+footer ._links{
+  width: 75%;
+  margin: 10px auto 0;
+}
+
+footer ._social a, footer ._stores a{
+  padding: 0 5px;
+}
+footer ._social{
+  float: left;
+}
+footer ._stores{
+  float: right;
+}
+
 footer .top_links{
   padding-top: 10px;
+  border-bottom: 1px solid rgba(255,255,255,.2);
 }
 footer .top_links ul{
   padding: 0;

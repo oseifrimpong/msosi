@@ -1,1 +1,21 @@
-We are about to get started!
+<div class="_background">
+  <%= image_tag('background_01.svg') %>
+</div>
+
+<div class="_home_content">
+  <div class="_logo">
+    <%= image_tag('msosi-logo.svg', height: 100) %>
+  </div>
+  <div class="_search">
+    <form method="get" action="">
+      <label><a href="#"> <%= image_tag('search-icon.svg', height: 15) %></a></label>
+      <input type="text" placeholder="Restaurant Name/Food ...">
+      <div class="styled-select">
+        <select>
+          <option>Restaurant</option>
+          <option>Dish</option>
+        </select>
+      </div>
+    </form>
+  </div>
+</div>

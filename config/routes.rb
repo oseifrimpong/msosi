@@ -13,7 +13,6 @@ root 'homepage#index'
 
 
 
- #resources :foods
  
 
  #--------Routes for food-----------#
@@ -26,5 +25,4 @@ root 'homepage#index'
  get 'foods/delete'		=> 'food#destroy'
  get 'foods/create'		=> 'food#create'
 		
-
 end
