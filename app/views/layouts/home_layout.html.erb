@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Msosi Food</title>
+  <%= favicon_link_tag 'favicon.png'%>
 	<%= stylesheet_link_tag    'homepage', media: 'all', 'data-turbolinks-track' => true %>
 </head>
 <body>
@@ -13,7 +14,7 @@
   </div>
   <div class="_profile_tray">
     <div class="_profile">
-      <a href="#"><%= image_tag('Profile-Icon.svg', height: 20) %></a>
+      <a href="users/sign_up"><%= image_tag('Profile-Icon.svg', height: 20) %></a>
     </div>
     <div class="_tray">
       <a href="#"><%= image_tag('Tray-Icon.svg') %> Tray</a>
