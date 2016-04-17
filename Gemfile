@@ -34,6 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'devise'
+#gem 'strong_parameters', '~> 0.2.3'
 # Use Unicorn as the app server
 # gem 'unicorn'
 

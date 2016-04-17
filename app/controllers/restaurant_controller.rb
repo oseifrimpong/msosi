@@ -9,12 +9,30 @@ class RestaurantController < ApplicationController
 	end
 
 	def create
+		#Restaurant.create(restaurant_params)
 		@restaurant = Restaurant.new(restaurant_params)
-			@restaurant.save
+		 if @restaurant.save
+			flash[:notice] = 'Profile was successfully created.'
+			redirect_to :action => 'index'
+		  else
+		  	flash[:notice] = 'Error.  Something went wrong.'
+		  	redirect_to :action => 'new'
+		 end
 	end
 
 	def update
-		
+		@restaurant = Restaurant.find(params[:id])
+
+		if @restaurant.update_attributes(restaurant_params)
+			redirect_to :action => 'show', :id => @food
+		else
+			render :action => 'edit'
+		end
+
+	end
+
+	def edit
+		@restaurant = Restaurant.find(params[:id])
 	end
 
 	def show
@@ -26,9 +44,8 @@ class RestaurantController < ApplicationController
 	end
 
 	private
-
 		def restaurant_params
-			params.require(:restaurant).permit(:name, :phone, :address, :email, :image)
+			params.fetch(:restaurant, {}).permit(:name, :phone, :address, :email, :image)
+			#params.require(:restaurant).permit(:name, :phone, :address, :email, :image)
 		end
-	end
 end
