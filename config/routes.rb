@@ -16,7 +16,7 @@ root 'homepage#index'
  
 
  #--------Routes for food-----------#
- get 'foods/id'		 => 'food#index'
+ get 'foods/index'		 => 'food#index'
  get 'foods/new'		=> 'food#new'
  post 'foods/create'	=> 'food#create'
  patch 'foods/update'	=> 'food#update'
@@ -36,7 +36,6 @@ get 'restaurants/show'		=> 'restaurant#show'
 get 'restaurants/edit'		=> 'restaurant#edit'
 get 'restaurants/delete'		=> 'restaurant#destroy'
 get 'restaurants/create'		=> 'restaurant#create'
-
-
+get 'restaurants/:id'			=> 'restaurants#index'
 
 end
