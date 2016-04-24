@@ -1,0 +1,27 @@
+<div class="food_index">
+	<h2> List of Foods</h2>
+
+	 <%= link_to("Add new Food", {:action => 'new'}) %>
+
+	 <table class="listing" summary="Food list">
+	 	
+	 		<tr class="header">
+	 			<th>&nbsp;</th>
+	 			<th>Name</th>
+	 			<th>Image</th>
+	 			<th>Cuisine</th>
+	 			<th>Description</th>
+	 		</tr>
+	 	<% @foods.each do |food| %>
+
+	 		<tr>
+	 			<td><%= food.name %></td>
+	 			<td class="center"><%= food.image %></td>
+	 			<td class="center"><%= food.cuisine %></td>
+	 			<td class="center"><%= food.description %></td>
+	 		</tr>
+	 		<% end %>
+	 	
+	 </table>
+	
+</div>
