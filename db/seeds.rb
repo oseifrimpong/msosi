@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+#creating seeds to fill database
+
+Food.create(name: 'Chips Mayayi', image: 'pic', cuisine: 'fast food', description: 'French fries with Eggs and Sausage' )
+Food.create(name: 'Chips Mayayi', image: 'pic', cuisine: 'fast food', description: 'French fries with Eggs and Sausage' )
+Food.create(name: 'Chips Mayayi', image: 'pic', cuisine: 'fast food', description: 'French fries with Eggs and Sausage' )
+Food.create(name: 'Chips Mayayi', image: 'pic', cuisine: 'fast food', description: 'French fries with Eggs and Sausage' )
+Food.create(name: 'Chips Mayayi', image: 'pic', cuisine: 'fast food', description: 'French fries with Eggs and Sausage' )
+Food.create(name: 'Chips Mayayi', image: 'pic', cuisine: 'fast food', description: 'French fries with Eggs and Sausage' )
+Food.create(name: 'Chips Mayayi', image: 'pic', cuisine: 'fast food', description: 'French fries with Eggs and Sausage' )
+Food.create(name: 'Chips Mayayi', image: 'pic', cuisine: 'fast food', description: 'French fries with Eggs and Sausage' )

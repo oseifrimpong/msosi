@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
 
+# #--------Routes for food-----------#
+#   get 'foods/index'
+#   get 'foods/show'
+#   get 'foods/new'
+#   get 'foods/edit'
+#   get 'foods/delete'
+
 
 #main homepage route
 root 'homepage#index'
 	
+
+match ':controller(/:action(/:id))', :via => [:get, :post]
 
 
 
@@ -15,15 +24,15 @@ root 'homepage#index'
 
  #resources :foods, only: [:index, :create]
 
- # #--------Routes for food-----------#
-  get 'foods/index'		 => 'foods#index'
- get 'foods/new'		=> 'foods#new'
-  post 'foods/create'	=> 'foods#create'
-  patch 'foods/update'	=> 'foods#update'
-  get 'foods/show'		=> 'foods#show'
-  get 'foods/edit'		=> 'foods#edit'
-  get 'foods/delete'		=> 'foods#destroy'
-  get 'foods/create'		=> 'foods#create'
+ # # #--------Routes for food-----------#
+ #  get 'foods/index'		 => 'foods#index'
+ # get 'foods/new'		=> 'foods#new'
+ #  post 'foods/create'	=> 'foods#create'
+ #  patch 'foods/update'	=> 'foods#update'
+ #  get 'foods/show'		=> 'foods#show'
+ #  get 'foods/edit'		=> 'foods#edit'
+ #  get 'foods/delete'		=> 'foods#destroy'
+ #  get 'foods/create'		=> 'foods#create'
 
 
 

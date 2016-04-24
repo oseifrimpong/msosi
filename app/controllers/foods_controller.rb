@@ -1,31 +1,36 @@
 class FoodsController < ApplicationController
-	layout false
+  
+  def index
+    @foods = Food.all 
+  end
 
-	def index
-		
-	end
+  def show
+    @food = Food.find(params[:id])
+  end
 
-	def show 
-	end
+  def new
+    @food = Food.new
+  end
 
-	def new
-		
-	end
+  def create
+      @food = Food.new(food_params)
+      if @food.save
+        redirect_to(:action => 'index')
+      else
+        render('new')
+      end
+  end
 
-	def create
-		
-	end
+  def edit
+  end
 
-	def edit
+  def delete
+  end
 
-	end
 
-	def update
-		
-	end
+  private
 
-	def destroy
-
-	end
-
+  def food_params
+    params.require(:food).permit(:name, :description)
+  end
 end
