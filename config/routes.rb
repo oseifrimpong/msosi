@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 # #--------Routes for food-----------#
-#   get 'foods/index'
+   get 'foods/index'
 #   get 'foods/show'
 #   get 'foods/new'
 #   get 'foods/edit'
