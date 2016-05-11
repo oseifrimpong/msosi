@@ -1,5 +1,7 @@
 <h2>Sign up</h2>
 
+<!--<% resource.profile || resource.build_profile %> -->
+
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
@@ -20,6 +22,40 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
+
+<!-- For User profile registration-->
+  <div class="field">
+    <%= f.fields_for resource.profile || resource.build_profile do |profile_form| %>
+    <p><%= profile_form.label :first_name %></p>
+    <p><%= profile_form.text_field :first_name %></p>
+    </div>
+
+  
+    <p><%= profile_form.label :last_name %></p>
+    <p><%= profile_form.text_field :last_name %></p>
+
+
+  
+    <p><%= profile_form.label :username %></p>
+    <p><%= profile_form.text_field :username %></p>
+  
+
+  
+    <p><%= profile_form.label :email %></p>
+    <p><%= profile_form.text_field :email %></p>
+
+
+  
+    <p><%= profile_form.label :phone %></p>
+    <p><%= profile_form.text_field :phone %></p>
+  
+
+  
+    <p><%= profile_form.label :delivery_address %></p>
+    <p><%= profile_form.text_area :delivery_address %></p>
+ 
+  <% end %>
+ 
 
   <div class="actions">
     <%= f.submit "Sign up" %>
