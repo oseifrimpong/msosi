@@ -12,14 +12,6 @@ class FoodsController < ApplicationController
     @food = Food.new
   end
 
-  # def create
-  #     @food = Food.new(food_params)
-  #     if @food.save
-  #       redirect_to(:action => 'index')
-  #     else
-  #       render('new')
-  #     end
-  # end
 
   def edit
   end
