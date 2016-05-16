@@ -1,24 +1,13 @@
 class FoodsController < ApplicationController
   
   def index
-    @foods = Food.find(food_params[:id])
+    @search = Food.search(params[:q])
+    @food = @search.result
   end
 
   def show
     @food = Food.find(params[:id])
   end
-
-  def new
-    @food = Food.new
-  end
-
-
-  def edit
-  end
-
-  def delete
-  end
-
 
   private
 
