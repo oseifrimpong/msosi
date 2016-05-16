@@ -11,7 +11,17 @@
     <%= image_tag('msosi-logo.svg', height: 100) %>
   </div>
   <div class="_search">
-    <form method="get" action="">
+  
+  <%= search_form_for @search, url: foods_index_path do |f| %>
+
+       <%= f.text_field :name_cont %>
+      <div class="action">
+      <%= f.submit "Search" %> </div>
+     <% end %>
+
+
+
+    <!-- <form method="get" action="">
       <label><a href="#"> <%= image_tag('search-icon.svg', height: 15) %></a></label>
       <input type="text" placeholder="Restaurant Name/Food ...">
       <div class="styled-select">
@@ -20,6 +30,6 @@
           <option>Dish</option>
         </select>
       </div>
-    </form>
+    </form> -->
   </div>
 </div>
