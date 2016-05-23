@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'pages/career'
+
+  get 'pages/help'
+
+  get 'pages/developer'
+
+  get 'pages/aboutus'
+
+  get 'pages/terms'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 # #--------Routes for food-----------#
    get 'foods/index'
